@@ -82,19 +82,19 @@ for(var i=0; i<zoneamento.length; i++) {
 	document.getElementById('content').innerHTML = content;
 }
 if(link == "https://leiscruzce.azurewebsites.net/leis2.html"){
-	document.getElementById('content').innerHTML = content2;
+	document.getElementById('content2').innerHTML = content2;
 }
 if(link == "https://leiscruzce.azurewebsites.net/leis3.html"){
-	document.getElementById('content').innerHTML = content3;
+	document.getElementById('content3').innerHTML = content3;
 }
 if(link == "https://leiscruzce.azurewebsites.net/leis4.html"){
-	document.getElementById('content').innerHTML = content4;
+	document.getElementById('content4').innerHTML = content4;
 }
-if(link == "https://leiscruzce.azurewebsites.net00/leis5.html"){
-	document.getElementById('content').innerHTML = content5;
+if(link == "https://leiscruzce.azurewebsites.net/leis5.html"){
+	document.getElementById('content5').innerHTML = content5;
 }
 if(link == "https://leiscruzce.azurewebsites.net/leis6.html"){
-	document.getElementById('content').innerHTML = content6;
+	document.getElementById('content6').innerHTML = content6;
 }
 // Registering Service Worker
 // Registrando Service Worker
