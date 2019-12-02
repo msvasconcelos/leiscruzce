@@ -66,7 +66,7 @@ for(var m=0; m<servidor.length; m++) {
 var contentToCache5 = appShellFiles.concat(servidorImages);
 
 var zoneamentoImages = [];
-for(var n=0; n<zonemento.length; n++) {
+for(var n=0; n<zoneamento.length; n++) {
   zoneamentoImages.push('data/img/'+zonemento[n].slug+'.jpg');
 }
 var contentToCache6 = appShellFiles.concat(zoneamentoImages);
