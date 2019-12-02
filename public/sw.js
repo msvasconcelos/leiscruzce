@@ -41,6 +41,36 @@ for(var i=0; i<financas.length; i++) {
 }
 var contentToCache = appShellFiles.concat(financasImages);
 
+var incentivosImages = [];
+for(var j=0; j<incentivos.length; j++) {
+  incentivosImages.push('data/img/'+incentivos[j].slug+'.jpg');
+}
+var contentToCache2 = appShellFiles.concat(incentivosImages);
+
+var outrosImages = [];
+for(var k=0; k<outros.length; k++) {
+  outrosImages.push('data/img/'+outros[k].slug+'.jpg');
+}
+var contentToCache3 = appShellFiles.concat(outrosImages);
+
+var segurancaImages = [];
+for(var l=0; l<seguranca.length; l++) {
+  segurancaImages.push('data/img/'+seguranca[l].slug+'.jpg');
+}
+var contentToCache4 = appShellFiles.concat(segurancaImages);
+
+var servidorImages = [];
+for(var m=0; m<servidor.length; m++) {
+  servidorImages.push('data/img/'+servidor[m].slug+'.jpg');
+}
+var contentToCache5 = appShellFiles.concat(servidorImages);
+
+var zoneamentoImages = [];
+for(var n=0; n<zonemento.length; n++) {
+  zoneamentoImages.push('data/img/'+zonemento[n].slug+'.jpg');
+}
+var contentToCache6 = appShellFiles.concat(zoneamentoImages);
+
 // Installing Service Worker
 // Instalando Service Worker
 self.addEventListener('install', function(e) {
@@ -48,7 +78,7 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
       console.log('[Service Worker] Caching all: app shell and content');
-      return cache.addAll(contentToCache);
+      return cache.addAll(contentToCache),cache.addAll(contentToCache2),cache.addAll(contentToCache3),cache.addAll(contentToCache4),cache.addAll(contentToCache5),cache.addAll(contentToCache6);
     })
   );
 });
